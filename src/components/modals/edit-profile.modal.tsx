@@ -40,7 +40,6 @@ export default function EditProfileModal({ id, username, phone }: IUser) {
         phone: values.phone,
         image: profileImage,
       })
-      console.log(data)
 
       return data
     },

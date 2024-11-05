@@ -8,8 +8,7 @@ import Activate from './pages/activate.page'
 import RecAcc from './pages/rec-acc.page'
 import $axios from './http/axios'
 import { setUser } from './slices/user.slice'
-import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from './lib/store'
+import { useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import { setIsLoading } from './slices/auth.slice'
 import House from './pages/house.page'
@@ -20,7 +19,6 @@ import DashboardRoute from './private-routes/dashboard.route'
 import Nothing from './components/shared/nothing'
 
 export default function App() {
-  const { user } = useSelector((state: RootState) => state.user)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -41,8 +39,6 @@ export default function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  console.log(user)
 
   return (
     <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
