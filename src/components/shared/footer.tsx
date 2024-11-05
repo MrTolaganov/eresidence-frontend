@@ -57,9 +57,9 @@ export default function Footer() {
                 <div className='text-sm'>
                   <div className='flex items-center justify-between'>
                     <div>@samandar</div>
-                    <div className='text-xs'>+998901234567</div>
+                    <div className='text-xs'>+998932201004</div>
                   </div>
-                  <div className='text-muted-foreground'>samandarkhamraev@gmail.com</div>
+                  <div className='text-muted-foreground'>samandarhamrayev555@gmail.com</div>
                 </div>
               </div>
               <div className='flex items-center gap-2'>
