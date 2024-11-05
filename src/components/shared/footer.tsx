@@ -35,6 +35,7 @@ export default function Footer() {
               </div>
               <div className='flex w-full items-center gap-2'>
                 <Avatar>
+                  <AvatarImage src='/islombek.png' />
                   <AvatarFallback className='bg-primary text-xl font-bold text-white'>
                     I
                   </AvatarFallback>
@@ -42,9 +43,9 @@ export default function Footer() {
                 <div className='text-sm'>
                   <div className='flex items-center justify-between'>
                     <div>@islombek</div>
-                    <div className='text-xs'>+998943686265</div>
+                    <div className='pl-8 text-xs'>+998975450428</div>
                   </div>
-                  <div className='text-muted-foreground'>islombekakhmadjonov@gmail.com</div>
+                  <div className='text-muted-foreground'>nexiar280hp@gmail.com</div>
                 </div>
               </div>
               <div className='flex items-center gap-2'>
@@ -56,7 +57,7 @@ export default function Footer() {
                 <div className='text-sm'>
                   <div className='flex items-center justify-between'>
                     <div>@samandar</div>
-                    <div className='text-xs'>+998943686265</div>
+                    <div className='text-xs'>+998901234567</div>
                   </div>
                   <div className='text-muted-foreground'>samandarkhamraev@gmail.com</div>
                 </div>
@@ -70,7 +71,7 @@ export default function Footer() {
                 <div className='text-sm'>
                   <div className='flex items-center justify-between'>
                     <div>@azizbek</div>
-                    <div className='text-xs'>+998943686265</div>
+                    <div className='text-xs'>+998901234567</div>
                   </div>
                   <div className='text-muted-foreground'>azizbekkhushanaev@gmail.com</div>
                 </div>
