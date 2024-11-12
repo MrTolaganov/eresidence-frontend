@@ -29,7 +29,7 @@ export default function EditHouseModal({ id, label, body, location, price }: IHo
   const [requiredImgMsg, setRequiredImgMsg] = useState(false)
   const [image, setImage] = useState('')
   const dispatch = useDispatch()
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   const form = useForm<z.infer<typeof editHouseSchema>>({
     resolver: zodResolver(editHouseSchema),
@@ -51,7 +51,7 @@ export default function EditHouseModal({ id, label, body, location, price }: IHo
       dispatch(setIsLoading(false))
       dispatch(setOpenEditHouseModal(false))
       dispatch(setError(''))
-      navigate(`/house/${id}`)
+      navigate(`/`)
       form.reset()
     },
     onError: err => {
