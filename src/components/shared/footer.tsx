@@ -64,6 +64,7 @@ export default function Footer() {
               </div>
               <div className='flex items-center gap-2'>
                 <Avatar>
+                  <AvatarImage src='/azizbek.jpg' />
                   <AvatarFallback className='bg-primary text-xl font-bold text-white'>
                     A
                   </AvatarFallback>
@@ -71,9 +72,9 @@ export default function Footer() {
                 <div className='text-sm'>
                   <div className='flex items-center justify-between'>
                     <div>@azizbek</div>
-                    <div className='text-xs'>+998901234567</div>
+                    <div className='text-xs'>+998939199100</div>
                   </div>
-                  <div className='text-muted-foreground'>azizbekkhushanaev@gmail.com</div>
+                  <div className='text-muted-foreground'>xushnayevazizbek@gmail.com</div>
                 </div>
               </div>
             </div>

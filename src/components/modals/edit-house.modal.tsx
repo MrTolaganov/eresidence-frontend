@@ -21,6 +21,7 @@ import { getDownloadURL, ref, uploadString } from 'firebase/storage'
 import { storage } from '@/lib/firebase'
 import { toast } from 'sonner'
 import { v4 as uuidv4 } from 'uuid'
+import { useNavigate } from 'react-router-dom'
 
 export default function EditHouseModal({ id, label, body, location, price }: IHouse) {
   const { openEditHouseModal } = useSelector((state: RootState) => state.houseModal)
@@ -28,6 +29,7 @@ export default function EditHouseModal({ id, label, body, location, price }: IHo
   const [requiredImgMsg, setRequiredImgMsg] = useState(false)
   const [image, setImage] = useState('')
   const dispatch = useDispatch()
+  const navigate=useNavigate()
 
   const form = useForm<z.infer<typeof editHouseSchema>>({
     resolver: zodResolver(editHouseSchema),
@@ -49,7 +51,7 @@ export default function EditHouseModal({ id, label, body, location, price }: IHo
       dispatch(setIsLoading(false))
       dispatch(setOpenEditHouseModal(false))
       dispatch(setError(''))
-      window.location.reload()
+      navigate(`/house/${id}`)
       form.reset()
     },
     onError: err => {
